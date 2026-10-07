@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f3">
+  <meta name="description" content="Anat&Phys Illustration Club brings art and biology together through themed anatomy drawings. Explore the body, meet the club, and create with us.">
+  <meta property="og:title" content="Anat&Phys Illustration Club | The body. A work of art.">
+  <meta property="og:description" content="A student art and biology club. One body part, a new theme, and a different way to see what makes us human.">
+  <meta property="og:type" content="website">
+  <title>Anat&Phys Illustration Club | Art meets anatomy</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23c83d30'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial' font-weight='bold' font-size='23' fill='%23fff'%3Ea%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="Anat and Phys Illustration Club home"><span class="brand-mark" aria-hidden="true">a<span>&</span>p</span><span class="brand-name">Anat&Phys<br>Illustration Club</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+    <nav id="navigation" class="navigation" aria-label="Main navigation">
+      <a href="#gallery">Explore art</a><a href="#about">Our club</a><a href="#members">Our people</a>
+      <a class="button button-small" href="https://forms.gle/7NgUXAgWZtmyFF3ZA" target="_blank" rel="noopener noreferrer">Join the club <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-label="Art meets anatomy">
+      <div class="hero-copy">
+        <p class="eyebrow">Where art meets anatomy</p>
+        <h1>The body.<br>A work of art.</h1>
+        <p class="hero-description">A student community exploring the science of being human, one creative illustration at a time.</p>
+        <a class="button" href="#gallery">Explore art <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art"><img src="assets/brain-beehive.webp" alt="A hand-drawn human brain blending into golden honeycomb, with bees hovering around it" width="1536" height="1024" fetchpriority="high"></div>
+    </section>
+    <section id="about" class="intro section">
+      <h2>Curious minds.<br>Creative hands.</h2>
+      <div class="intro-copy"><p>Biology tells us how the body works. Art helps us see it differently.</p><p>We’re a high school club bringing anatomy, physiology, and illustration together. Every two weeks, we explore a body part through a new creative theme, then share the science behind the sketch.</p></div>
+    </section>
+    <section id="gallery" class="gallery section" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Anatomy, reimagined.</h2>
+      <p class="section-description">One body part. An unexpected theme. A new way to understand what’s inside us.</p>
+      <div class="gallery-filters" role="group" aria-label="Filter illustrations by body system">
+        <button type="button" data-filter="all" aria-pressed="true">All studies <span>3</span></button>
+        <button type="button" data-filter="nervous" aria-pressed="false">Nervous system</button>
+        <button type="button" data-filter="circulatory" aria-pressed="false">Circulatory system</button>
+        <button type="button" data-filter="respiratory" aria-pressed="false">Respiratory system</button>
+      </div>
+      <p id="gallery-status" class="visually-hidden" role="status" aria-live="polite">Showing all 3 studies</p>
+      <div class="art-grid" id="art-grid">
+        <article class="artwork artwork-featured" data-system="nervous" id="brain-study">
+          <div class="artwork-image brain-image"><img src="assets/brain-beehive.webp" alt="Coral brain folds transform into golden honeycomb in a pencil and watercolor illustration" width="1536" height="1024" loading="lazy"></div>
+          <div class="artwork-content">
+            <p class="artwork-category">Brain × Beehive</p>
+            <h3>A hive of ideas.</h3>
+            <p class="artwork-function">The brain processes sensory information, coordinates movement, and supports memory, emotion, and thought.</p>
+            <details class="science-note"><summary>The science behind the sketch <span aria-hidden="true">+</span></summary><div><p>Neurons communicate through electrical and chemical signals. Networks of these cells help us think, feel, and respond to the world.</p><p>The honeycomb is an artistic metaphor for many connected parts working together.</p></div></details>
+          </div>
+        </article>
+        <article class="artwork" data-system="circulatory" id="heart-study">
+          <div class="artwork-image heart-image"><img src="assets/heart-botanical.webp" alt="An anatomical heart with crimson vessels growing into flowering stems and green leaves" width="1122" height="1402" loading="lazy"></div>
+          <div class="artwork-content">
+            <p class="artwork-category">Heart × Botanical garden</p>
+            <h3>Life in every beat.</h3>
+            <p class="artwork-function">The heart pumps blood through the lungs and the rest of the body, helping deliver oxygen and nutrients.</p>
+            <details class="science-note"><summary>The science behind the sketch <span aria-hidden="true">+</span></summary><div><p>The right side of the heart sends blood to the lungs. The left side sends oxygen-rich blood around the body.</p><p>Branching stems echo blood vessels, while blooming flowers represent the life this circulation supports.</p></div></details>
+          </div>
+        </article>
+        <article class="artwork" data-system="respiratory" id="lung-study">
+          <div class="artwork-image lungs-image"><img src="assets/lungs-forest.webp" alt="Two lung shapes formed from delicate tree branches and sage green foliage beneath a sketched trachea" width="1122" height="1402" loading="lazy"></div>
+          <div class="artwork-content">
+            <p class="artwork-category">Lungs × Forest</p>
+            <h3>The forest within.</h3>
+            <p class="artwork-function">The lungs bring oxygen into the blood and remove carbon dioxide when you breathe.</p>
+            <details class="science-note"><summary>The science behind the sketch <span aria-hidden="true">+</span></summary><div><p>Air travels through branching airways to tiny sacs called alveoli. Oxygen and carbon dioxide move between the air and blood there.</p><p>The branching trees echo the shape of the airways. Leaves are an artistic theme, rather than lung anatomy.</p></div></details>
+          </div>
+        </article>
+      </div>
+      <p class="gallery-caption">AI-generated concept illustrations to inspire our club’s themed drawing projects.</p>
+    </section>
+    <section id="departments" class="departments section" aria-labelledby="departments-heading">
+      <div class="department-heading"><h2 id="departments-heading">Find your part.</h2><p class="section-description">Artists, science enthusiasts, builders, storytellers. There’s a place for your curiosity here.</p></div>
+      <div class="department-list">
+        <details class="department"><summary><span class="department-title">Draw.</span><span class="department-name">Illustration</span><span class="department-plus" aria-hidden="true">+</span></summary><div class="department-body"><p>Turn a body part and a creative theme into an illustration. Try pencil, paint, digital art, or a medium you love. Each drawing project runs for two weeks.</p></div></details>
+        <details class="department"><summary><span class="department-title">Discover.</span><span class="department-name">Body-part descriptions</span><span class="department-plus" aria-hidden="true">+</span></summary><div class="department-body"><p>Research what each body part does and help write the science that accompanies the art. Make anatomy and physiology easy for other students to understand.</p></div></details>
+        <details class="department"><summary><span class="department-title">Build.</span><span class="department-name">Website</span><span class="department-plus" aria-hidden="true">+</span></summary><div class="department-body"><p>Bring our illustrations and explanations together in the club’s online portfolio. Help shape how visitors explore the artwork and learn about the body.</p></div></details>
+        <details class="department"><summary><span class="department-title">Share.</span><span class="department-name">Social media & marketing</span><span class="department-plus" aria-hidden="true">+</span></summary><div class="department-body"><p>Help our artwork reach more people through Instagram. Plan posts, share drawing progress, and introduce the science behind each finished piece.</p></div></details>
+      </div>
+    </section>
+    <section id="members" class="members section" aria-labelledby="members-heading">
+      <h2 id="members-heading">Our people.</h2>
+      <p class="section-description">A shared curiosity. A little creativity. A club we build together.</p>
+      <div class="people-grid">
+        <div class="person"><span class="person-initials" aria-hidden="true">LK</span><h3>Luna Kim</h3><p>Anat&Phys Illustration Club</p></div>
+        <div class="person"><span class="person-initials" aria-hidden="true">CH</span><h3>Catherine Hong</h3><p>Anat&Phys Illustration Club</p></div>
+      </div>
+    </section>
+    <section class="join-section" aria-labelledby="join-heading">
+      <div><p class="eyebrow">Bring your own perspective</p><h2 id="join-heading">Let curiosity<br>take shape.</h2></div>
+      <div class="join-copy"><p>Bring your sketchbook, your curiosity, or both. Choose a department and help us turn biology into art.</p><a class="button" href="https://forms.gle/7NgUXAgWZtmyFF3ZA" target="_blank" rel="noopener noreferrer">Join the club <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-top"><a class="brand" href="#home" aria-label="Anat and Phys Illustration Club home"><span class="brand-mark" aria-hidden="true">a<span>&</span>p</span><span class="brand-name">Anat&Phys<br>Illustration Club</span></a><a class="instagram-link" href="https://www.instagram.com/cca.anatphysillustration/" target="_blank" rel="noopener noreferrer"><span>Follow our creative process</span><strong>@cca.anatphysillustration <span aria-hidden="true">↗</span></strong></a></div>
+    <div class="footer-bottom"><p>Art. Biology. A different point of view.</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></div>
+  </footer>
+</body>
+</html>
